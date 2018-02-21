@@ -1,6 +1,6 @@
 
 zenroom: ## run zenroom in a docker container
-	docker run --rm -it --entrypoint "/bin/sh" zenroom:latest
+	docker run --rm -it  --entrypoint "/bin/sh" zenroom:latest
 
 .PHONY: zenroom
 
