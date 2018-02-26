@@ -2,7 +2,7 @@
 -- for both a user and a device
 -- outputs to json
 
-json = cjson_safe()
+json = cjson()
 
 user_pk, user_sk = keygen_session_x25519()
 

@@ -1,9 +1,8 @@
 
-
-json = cjson_safe()
+json = cjson()
+keys = json.decode(KEYS)
 
 data = "{ 'temp' : 22.3 }"
-keys = json.decode(arguments)
 
 nonce=randombytes(32)
 
