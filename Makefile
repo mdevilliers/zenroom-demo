@@ -5,7 +5,7 @@ zenroom: ## run zenroom in a docker container
 .PHONY: zenroom
 
 docker_build: ## build the docker container that wraps zenroom
-	docker build -t zenroom .
+	docker build --no-cache -t zenroom .
 
 .PHONY: docker_build
 
