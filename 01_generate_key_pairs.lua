@@ -12,11 +12,11 @@ keypair = json.encode(
    {
     device ={
         device_secret_key = encode_b58( device_sk ),
-	    user_public_key   = encode_b58( user_pk )
+        user_public_key   = encode_b58( user_pk )
             },
      wallet ={
         device_public_key = encode_b58( device_pk ),
-	    user_private_key  = encode_b58( user_sk )
+        user_private_key  = encode_b58( user_sk )
     }
 })
 
