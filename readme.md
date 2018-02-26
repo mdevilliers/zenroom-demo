@@ -31,13 +31,11 @@ cat ./keys.json | jq ".wallet" > wallet_keys.json
 Encrypt some data
 
 ```
-./zenroom-static -a ./device_keys.json  ./02_encrypt_data_on_device.lua > data.json
+./zenroom-static -k ./device_keys.json  ./02_encrypt_data_on_device.lua > data
 ```
-
-Below here it doesn't work until https://github.com/DECODEproject/zenroom/issues/3 is resolved.
 
 Decrypt some data
 
 ```
-./zenroom-static -a ./wallet_keys.json  ./03_decrypt_data_with_wallet.lua
+cat ./data | ./zenroom-static -k ./wallet_keys.json ./03_decrypt_data_with_wallet.lua -
 ```
